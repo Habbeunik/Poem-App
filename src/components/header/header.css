@@ -1,0 +1,13 @@
+.header-box {
+  padding: 20px 0px;
+}
+
+.secondary-button {
+  margin: 'none';
+  color: white !important;
+  box-shadow: 0 0 0 1px white inset !important;
+}
+
+.header-box div .secondary-button:hover {
+  background: #783cf8 !important;
+}

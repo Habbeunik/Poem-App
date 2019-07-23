@@ -1,0 +1,59 @@
+body {
+  font-family: 'Century Gothic Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Century Gothic Bold' !important;
+}
+
+p,
+button,
+div,
+label,
+input {
+  font-family: 'Century Gothic Regular' !important;
+}
+
+.index-container {
+  background: rgb(51, 9, 139);
+  background: linear-gradient(
+    205deg,
+    rgba(51, 9, 139, 1) 1%,
+    rgba(120, 60, 248, 1) 56%,
+    rgba(215, 199, 250, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+.home * {
+  color: #ffffff;
+}
+
+.faintText {
+  color: #ffffff96 !important;
+  line-height: 3rem;
+}
+
+.page-card {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  min-height: 70vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 15px;
+}
+
+.input {
+  border-width: 0px !important;
+  border-bottom-width: 1px !important;
+  border-radius: 0px !important;
+  padding-left: 0px !important;
+  margin: 10px 0px !important;
+}

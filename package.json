@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "pure-react-carousel": "^1.21.1",
     "razzle": "^3.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.3"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
