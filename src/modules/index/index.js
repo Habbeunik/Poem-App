@@ -1,16 +1,28 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
+import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import { LandingHeader } from '../../components/header';
+import Signup from './signup';
+
+function indexPageWrapper(PageComponent) {
+  return function Page(props) {
+    return (
+      <div className='index-container'>
+        <LandingHeader />
+        <PageComponent {...props} />
+      </div>
+    );
+  };
+}
+
+const HomePage = indexPageWrapper(Home);
+const SignupPage = indexPageWrapper(Signup);
 
 export default function IndexModule() {
   return (
-    <div className='index-container'>
-      <LandingHeader />
-      <Switch>
-        <Route path='/' component={Home} />
-      </Switch>
-    </div>
+    <Fragment>
+      <Route path='/' exact component={HomePage} />
+      <Route path='/signup' component={SignupPage} />
+    </Fragment>
   );
 }

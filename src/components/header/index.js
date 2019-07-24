@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Grid, Header, List, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 import './header.css';
 
@@ -8,9 +9,11 @@ export function LandingHeader() {
     <Container as='div' className='header-box'>
       <Grid>
         <Grid.Column width={4} floated='left'>
-          <Header as='h2' style={{ color: '#fff' }}>
-            POEM Me
-          </Header>
+          <Link to='/'>
+            <Header as='h2' style={{ color: '#fff' }}>
+              POEM Me
+            </Header>
+          </Link>
         </Grid.Column>
         <Grid.Column
           width={3}
@@ -28,7 +31,9 @@ export function LandingHeader() {
             }}
           >
             <List.Item as='div'>
-              <Button inverted>Sign up</Button>
+              <Button inverted as={Link} to='/signup'>
+                Sign Up
+              </Button>
             </List.Item>
             <List.Item as='div' style={{ color: '#fff' }}>
               About

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.21.1",
     "razzle": "^3.0.0",
     "react": "^16.8.6",
