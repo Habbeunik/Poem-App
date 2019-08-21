@@ -18,11 +18,11 @@ function indexPageWrapper(PageComponent) {
 const HomePage = indexPageWrapper(Home);
 const SignupPage = indexPageWrapper(Signup);
 
-export default function IndexModule() {
-  return (
-    <Fragment>
-      <Route path='/' exact component={HomePage} />
-      <Route path='/signup' component={SignupPage} />
-    </Fragment>
-  );
-}
+const IndexModule = (
+  <Fragment>
+    <Route path='/' exact component={HomePage} />
+    <Route path='/signup' exact component={SignupPage} />
+  </Fragment>
+);
+
+export default IndexModule;

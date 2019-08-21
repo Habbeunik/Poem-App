@@ -14,7 +14,7 @@ function Home() {
             <PoemSlide />
           </div>
         </Grid.Column>
-        <Grid.Column width={4} style={{ position: 'relative' }} floated='right'>
+        <Grid.Column width={5} style={{ position: 'relative' }} floated='right'>
           <div className='page-card'>
             <p>Hey, Welcome Back !</p>
             <Header as='h3' style={{ marginTop: '100px' }}>
